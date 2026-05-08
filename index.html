@@ -240,8 +240,8 @@ pointer-events:none;
 
 <!-- welcome -->
 <section class="card active">
-<h1>Special gift</h1>
-<p>For someone i love the most. <br>But you have to unlock it.</p>
+<h1>Hi Love</h1>
+<p>This is for you.<br>But you have to unlock it.</p>
 <button onclick="next()">Unlock</button>
 </section>
 
@@ -273,7 +273,7 @@ pointer-events:none;
 <div id="options"></div>
 
 <div class="score-box">
-Points: <span id="score">0</span> / 3
+Points: <span id="score">0</span> / 5
 </div>
 
 <p id="feedback"></p>
@@ -282,7 +282,7 @@ Points: <span id="score">0</span> / 3
 <!-- final -->
 <section class="card">
 
-<h1>Another Month of Us</h1>
+<h1>Happy Mensive, Sayangku🤍</h1>
 
 <div class="lovebox">
 <div class="timer-title">TIME WITH YOU</div>
@@ -336,7 +336,7 @@ if(page===2)loadQuestion();
 ================================================= */
 
 let pinInput = '';
-const correctPin = '1402';
+const correctPin = '0904';
 const pinDisplay = document.getElementById("pin");
 
 function renderDots(){
@@ -384,9 +384,11 @@ function checkPin(){
 ================================================= */
 
 const questions=[
-{q:"When did we first meet? ", options:["14 February"," 24 January","22 January"],correct:2},
-{q:"Who loves the most?", options:["You","100% me","Both"],correct:2},
-{q:"What’s on my mind most of the time?", options:["Anime","Someone else","You (my pretty girlfriend"],correct:2}
+{q:"Kapan kita bertemu?", options:["February","March","April"],correct:2},
+{q:"Siapa nama kucing aku?", options:["Louis","Lumié","leony"],correct:1},
+{q:"Guess who loves the most?", options:["Us","Me","You"],correct:0},
+{q:"What song makes us build a relationship? ", options:["Maliq & D'Essentials - Pilihanku","Keisya Levronka - Jadilah Kekasihku Saja","Andra and The Back Bone - Sempurna"],correct:1},
+{q:"Panggilan dari aku buat kamu;", options:["Ganteng","Imut","Jelek"],correct:1}
 ];
 
 let currentQ = 0;
@@ -451,7 +453,7 @@ function checkAnswer(i,btn){
 
 function startTimer(){
 
-    const start = new Date("2026-01-22T00:00:00");
+    const start = new Date("2026-04-09T00:00:00");
 
     setInterval(()=>{
 
@@ -485,11 +487,19 @@ function revealMemory(el){
     `;
 
     const text = `
-      Even all the beautiful words in the world still wouldn’t be enough to explain how much you mean to me. Yet here you are, right in my life, and somehow that alone says everything. I admire the little things about you—the way you care about me, the way you talk, and how your eyes light up when you’re excited, especially when it’s with me. 
+        ga kerasa ya kita udah satu bulan bareng. mungkin keliatannya sebentar, tapi buat aku banyak banget hal yang aku rasain selama sama kamu. makasih udah bertahan sejauh ini sama aku, sama semua overthinking, mood, dan sifat aku yang kadang ribet ini :(
 
-      With you, I’ve found a kind of peace I didn’t even know I was looking for. It’s a kind of comfort I didn’t know I needed until I found it in you. It’s something I can’t find anywhere else, no matter how hard I try. Every moment with you, no matter how small, feels important and meaningful.
-      
-      Thank you for being here with me, for every moment, every word, and every feeling we’ve shared. Happy 2nd mensiversary, sayangku. I’m so grateful for you, today and always. ❤️  
+        aku juga mau minta maaf kalau akhir-akhir ini aku sering sibuk dan kadang jadi kurang ada buat kamu. sometimes i get too caught up in everything, tapi bukan berarti aku ga peduli yaa. aku tetap mikirin kamu, tetap pengen ngobrol sama kamu, tetap pengen semuanya baik-baik aja.
+        
+        dan soal yang kemarin kita omongin… makasih udah mau dengerin aku. aku sebenernya cuma pengen ngerasa lebih deket sama kamu, lebih banyak waktu kecil yang kita habisin bareng, even simple things. aku ngerti kok kamu bukan orang yang gampang ngajak ini itu, dan aku juga ga nuntut kamu jadi sempurna. aku cuma pengen kita sama-sama belajar buat saling ngerti 🤍
+        
+        jujur aku juga kepikiran terus waktu kamu bilang kamu bingung harus ngajak aku ngapain. padahal sebenernya buat aku sesimpel ditemenin ngobrol, dengerin lagu bareng, atau hal kecil dari kamu aja udah bikin aku seneng.
+        
+        sama satu lagi… please jangan sering sakit ya sayang :(
+        aku kadang kepikiran sendiri, “kenapa kamu sering sakit gitu?” aku jadi khawatir. please take care of yourself lebih baik lagi, makan yang bener, istirahat yang cukup, jangan terlalu dipendem semuanya sendirian. aku pengen kamu sehat terus.
+        
+        happy first month yaa 🤍
+        thank you for staying, thank you for trying, and thank you for being you.
       `;
 
     const paragraphs = text.trim().split(/\n\s*\n/);
